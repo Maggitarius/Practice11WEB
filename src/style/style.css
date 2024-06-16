@@ -1,0 +1,150 @@
+p {
+    margin: 0;
+}
+
+header, .nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    align-items: end;
+}
+
+.nav {
+    gap: 35px;
+}
+
+.logo {
+    display: flex;
+    margin: 0;
+    font-size: 16pt;
+    align-items: end;
+}
+
+.nav p {
+    display: flex;
+    align-items: end;
+    line-height: 25px;
+    margin: 0;
+}
+
+body {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #8A7C63;
+    font-size: 16pt;
+    background: #FFFAF1;
+    overflow: hidden;
+}
+
+button {
+    border-radius: 100px;
+    padding: 5px 15px;
+    font-family: Arial, Helvetica, sans-serif, cursive;
+    font-weight: 600;
+    font-style: normal;
+    color: #8A7C63;
+    font-size: 16pt;
+    border: 3px solid #DA96B0;
+    background-color: #FFFAF1;
+}
+
+button:hover {
+    background-color: #B9597E;
+    color: #FFFAF1;
+}
+
+.debil .content {
+    display: flex;
+    gap: 20px;
+}
+
+.bebra {
+    flex: 2;
+}
+
+.bebra p {
+    font-size: 48pt;
+    top: 25px;
+    color: #8A7C63;
+}
+
+.bebra img {
+    max-width: 100%;
+    height: auto;
+}
+
+.aside {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.kard {
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kard img {
+    width: 100%;
+    height: auto;
+    max-width: 150px; /* Уменьшаем размер изображения */
+}
+
+.subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slidermain {
+    top: 0;
+    height: 500px;
+}
+
+.slidernotmain {
+    margin-top: 30px;
+    height: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .debil {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .bebra p {
+        font-size: 48pt;
+        top: 25px;
+        color: #8A7C63;
+    }
+
+    .bebra img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .kard {
+        height: auto;
+        padding: 10px;
+    }
+
+    .kard img {
+        width: 100%;
+        height: auto;
+    }
+
+    .slidermain {
+        top: 0;
+        height: 500px;
+    }
+
+    .slidernotmain {
+        margin-top: 30px;
+        height: 10px;
+    }
+}
